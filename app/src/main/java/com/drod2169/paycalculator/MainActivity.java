@@ -36,9 +36,11 @@ public class MainActivity extends Activity
         mTitle = getTitle();
 
         // Set up the drawer.
-        mNavigationDrawerFragment.setUp(
-                R.id.navigation_drawer,
-                (DrawerLayout) findViewById(R.id.drawer_layout));
+        if (mNavigationDrawerFragment != null) {
+            mNavigationDrawerFragment.setUp(
+                    R.id.navigation_drawer,
+                    (DrawerLayout) findViewById(R.id.drawer_layout));
+        }
 
         // TimeRecDataGetter timeRecDataGetter = new TimeRecDataGetter(this, (TextView)findViewById(R.id.result));
         //timeRecDataGetter.getData();
@@ -82,16 +84,16 @@ public class MainActivity extends Activity
 
     public void onSectionAttached(int number) {
         switch (number) {
-            case 0:
+            case 1:
                 mTitle = getString(R.string.title_home);
                 break;
-            case 1:
+            case 2:
                 mTitle = getString(R.string.title_section1);
                 break;
-            case 2:
+            case 3:
                 mTitle = getString(R.string.title_section2);
                 break;
-            case 3:
+            case 4:
                 mTitle = getString(R.string.title_section3);
                 break;
         }
