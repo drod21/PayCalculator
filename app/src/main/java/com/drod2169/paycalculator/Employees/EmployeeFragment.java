@@ -4,10 +4,13 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.drod2169.paycalculator.MainActivity;
 import com.drod2169.paycalculator.R;
@@ -45,8 +48,7 @@ public class EmployeeFragment extends Fragment {
         rootView = inflater.inflate(R.layout.fragment_employee, container, false);
         editText = (EditText) rootView.findViewById(R.id.employee);
         editText.requestFocus();
-        showDialog();
-        /*if (editText != null) {
+        if (editText != null) {
             editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                     boolean handled = false;
@@ -56,7 +58,7 @@ public class EmployeeFragment extends Fragment {
                     return handled;
                 }
             });
-        }*/
+        }
         return rootView;
     }
 
