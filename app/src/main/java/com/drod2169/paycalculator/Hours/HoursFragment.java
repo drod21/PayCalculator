@@ -10,11 +10,10 @@ import android.view.ViewGroup;
 import com.drod2169.paycalculator.MainActivity;
 import com.drod2169.paycalculator.R;
 
-/**
- * Created by drod2169 on 7/14/14.
- */
 public class HoursFragment extends Fragment {
     private static final String ARG_SECTION_NUMBER = "section_number";
+
+    NewTimes newTimes;
 
     /**
      * Returns a new instance of this fragment for the given section

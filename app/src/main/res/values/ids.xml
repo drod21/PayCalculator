@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="header">false</item>
+    <item type="id" name="heading">false</item>
+    <item type="id" name="sc_scrollBar">false</item>
+    <item type="id" name="ll_List">false</item>
+    <item type="id" name="bt_addnew">false</item>
+    <item type="id" name="bt_reset">false</item>
+    <item type="id" name="txtSum">false</item>
+    <item type="id" name="btn_StartDay">false</item>
+    <item type="id" name="btn_StartTime">false</item>
+    <item type="id" name="btn_EndDay">false</item>
+    <item type="id" name="btn_EndTime">false</item>
+    <item type="id" name="btn_Ok">false</item>
+    <item type="id" name="tv_id">false</item>
+    <item type="id" name="tv_start">false</item>
+    <item type="id" name="tv_end">false</item>
+    <item type="id" name="tv_total">false</item>
+    <item type="id" name="menu_rate">false</item>
+    <item type="id" name="menu_dateFormat">false</item>
+    <item type="id" name="menu_sendMail">false</item>
+</resources>
